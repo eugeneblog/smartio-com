@@ -7,6 +7,10 @@ import router from './router'
 import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
+import '@/styles/index.scss'
+import './icons'
+import '@/assets/iconfont/iconfont.js'
+
 Vue.use(Element, {
   size: 'medium'
 })
@@ -18,5 +22,6 @@ new Vue({
   el: '#app',
   router,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+  render: h => h(App)
 })

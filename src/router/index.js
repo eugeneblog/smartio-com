@@ -7,9 +7,13 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/home',
+      path: '/index/:id',
       name: 'Layout',
-      component: Layout
+      component: Layout,
+      children: [{
+        path: 'home',
+        component: () => import('@/pages/home/index.vue')
+      }]
     }
   ]
 })

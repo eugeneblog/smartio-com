@@ -1,0 +1,23 @@
+.navbar-toggle {
+    position: relative;
+    float: right;
+    margin-right: 15px;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    &:focus {
+        outline: 0;
+    }
+}
+.zmdi{
+    display:inline-block;
+    font:normal normal normal 14px/1 'Material-Design-Iconic-Font';
+    font-size:inherit;
+    text-rendering:auto;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
