@@ -27,23 +27,33 @@ export default {
         {
           id: '1',
           text: '网站首页',
-          link: '#'
+          link: '/index/home',
+          show: false
         }, {
           id: '2',
           text: '成功案例',
-          link: '#'
+          link: '/index/cases',
+          show: false
         }, {
           id: '3',
           text: '产品中心',
-          link: '#'
+          link: '/index/product',
+          show: false
         }, {
           id: '4',
           text: 'H5编程工具',
-          link: '#'
+          link: '/index/tools',
+          show: false
         }, {
           id: '5',
+          text: '行业资讯',
+          link: '/index/information',
+          show: false
+        }, {
+          id: '6',
           text: '联系我们',
-          link: '#'
+          link: '/index/about',
+          show: false
         }
       ],
       isShow: false

@@ -1,46 +1,46 @@
-.el-container {
+.el-container, .el-row {
     margin-right: auto !important;
     margin-left: auto !important;
     padding-left: 15px !important;
     padding-right: 15px !important;
 }
-@media screen and (max-width: 1680px) {
-    .el-container {
-      width: 1200px;
+.input-box {
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    float: left;
+    display: block;
+    input[type="text"] {
+        display: block;
+        width: 100%;
+        border: 1px solid rgba(74, 74, 74, 0.15);
+        color: #757575;
+        background-color: transparent;
+        height: 40px;
+        line-height: 24px;
+        padding: 7px 15px;
     }
-}
-@media screen and (max-width: 1200px) {
-    .el-container {
-      width: 800px;
+    textarea {
+        display: block;
+        width: 100%;
+        border: 1px solid rgba(74, 74, 74, 0.15);
+        color: #757575;
+        background-color: transparent;
+        height: 150px !important;
+        line-height: 24px;
+        padding: 7px 15px;
     }
-}
-@media screen and (max-width: 820px) {
-    .el-container {
-      width: 640px;
-    }
-}
-@media screen and (max-width: 728px) {
-    .el-container {
-      width: 600px;
-    }
-}
-@media screen and (max-width: 660px) {
-    .el-container {
-      width: 540px;
-    }
-}
-@media only screen and (max-width: 552px) {
-    .el-container {
-        width: 480px;
-    }
-}
-@media only screen and (max-width: 480px) {
-    .el-container {
-        width: 400px;
-    }
-}
-@media only screen and (max-width: 375px) {
-    .el-container {
-        width: 360px;
+    input[type="submit"] {
+        cursor: pointer;
+        display: block;
+        border: 1px solid rgba(74, 74, 74, 0.15);
+        color: #757575;
+        background-color: transparent;
+        height: 40px;
+        line-height: 24px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        padding: 7px 45px;
+        text-transform: uppercase;
     }
 }

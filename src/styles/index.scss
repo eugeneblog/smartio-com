@@ -73,3 +73,16 @@ ul {
    fill: currentColor;
    overflow: hidden;
 }
+.active a{
+    background: #71b100;
+    background: -moz-linear-gradient(left, #71b100 0%, #0071b0 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, #71b100), color-stop(100%, #0071b0));
+    background: -webkit-linear-gradient(left, #71b100 0%, #0071b0 100%);
+    background: -o-linear-gradient(left, #71b100 0%, #0071b0 100%);
+    background: -ms-linear-gradient(left, #71b100 0%, #0071b0 100%);
+    background: linear-gradient(to right, #71b100 0%, #0071b0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$theme-color-1', endColorstr='$theme-color-2', GradientType=1 );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

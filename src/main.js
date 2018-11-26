@@ -10,6 +10,11 @@ import 'element-ui/lib/theme-chalk/index.css'
 import '@/styles/index.scss'
 import './icons'
 import '@/assets/iconfont/iconfont.js'
+import './mock'
+
+import 'swiper/dist/css/swiper.css'
+import store from './store'
+import './permission.js'
 
 Vue.use(Element, {
   size: 'medium'
@@ -21,6 +26,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>',
   render: h => h(App)

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="header-box">
         <top-nav></top-nav>
         <menu-list></menu-list>
     </div>
@@ -16,3 +16,10 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.header-box {
+  float: left;
+  height: 100% !important;
+}
+</style>

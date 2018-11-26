@@ -2,7 +2,9 @@
     <div id="main-menu" class="main-menu onepage-nav collapse navbar-collapse float-right">
         <nav>
             <ul>
-                <li class="active"
+                <li
+                @click = "clickHandle(item, item.id)"
+                :class="{ active: item.show }"
                 v-for="item in list"
                 :key="item.id"
                 >
@@ -16,15 +18,29 @@
 <script>
 export default {
   name: 'MenuItem',
+  data () {
+    return {
+      clickIndex: 0
+    }
+  },
   props: {
     list: Array
+  },
+  methods: {
+    clickHandle (item, index) {
+      this.list.forEach(element => {
+        element.show = false
+      })
+      this.clickIndex = index - 1
+      item.show = true
+    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
 .main-menu {
-    margin: 15px 0;
+    margin: 20px 0;
     padding: 0;
     nav {
         ul {
@@ -51,6 +67,8 @@ export default {
                     }
                 }
                 a {
+                    font-size: 18px;
+                    font-weight: 300;
                     &:hover {
                         background: #71b100;
                         background: -moz-linear-gradient(left, #71b100 0%, #0071b0 100%);
