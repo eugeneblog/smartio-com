@@ -16,7 +16,7 @@
                     >
                         <el-col
                         :key="item.id"
-                        :span="6" class="footer-item">
+                        :span="8" class="footer-item">
                             <div>
                                 <h4>{{ item.title }}</h4>
                                 <p
@@ -67,38 +67,22 @@ export default {
         }]
       }, {
         id: '3',
-        title: '快速入口',
-        context: [{
-          id: '1',
-          text: '网站首页'
-        }, {
-          id: '2',
-          text: '产品中心'
-        }, {
-          id: '3',
-          text: '企业资讯'
-        }, {
-          id: '4',
-          text: 'HTML5编程工具'
-        }]
-      }, {
-        id: '4',
         title: '联系我们',
         context: [{
           id: '1',
-          text: '服务专线:84563130'
+          text: '服务专线:0755-84563100'
         }, {
           id: '2',
-          text: '123@qq.com'
+          text: '企业邮箱: 13316967007@126.com'
         }, {
           id: '3',
-          text: '麟恒中心广场J栋'
+          text: '深圳市龙岗区横岗街道麟恒中心广场J栋806'
         }, {
           id: '4',
           text: '周一至周六,9:00 - 18:00'
         }, {
           id: '5',
-          text: '粤ICP备'
+          text: '粤ICP备16067960号-1'
         }]
       }]
     }
@@ -113,27 +97,29 @@ export default {
 
 <style lang="scss" scoped>
 .app-main {
+    float: left;
     height: 100%;
     width: 100%;
     .app-footer {
-        position: relative;
-        bottom: 0;
-        margin-top: 60px;
-        background: #f6f6f6;
-        .footer-main {
-            margin-top: 40px;
-            .footer-item {
-                padding-left: 40px;
-                .specific-text {
-                    margin-top: 20px;
-                    color: #949494;
-                }
-                .footer-slogan {
-                    padding-right: 40px;
-                    text-align: left;
-                }
-            }
+      position: relative;
+      bottom: 0;
+      margin-top: 60px;
+      background: #f6f6f6;
+      .footer-main {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        .footer-item {
+          padding-left: 40px;
+          .specific-text {
+              margin-top: 20px;
+              color: #949494;
+          }
+          .footer-slogan {
+            padding-right: 40px;
+            text-align: left;
+          }
         }
+      }
     }
 }
 </style>

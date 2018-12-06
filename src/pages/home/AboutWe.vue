@@ -7,24 +7,24 @@
                 </div>
                 <div class="about-content">
                     <h1>关于<span>SmartIO</span></h1>
-                    <h4>工作细节</h4>
-                    <p>当我们第一次建立沟通时，我们的服务就已经开始，对JPD来说，客户永远是被放在第一位的，我们始终站在客户的角度去思考。</p>
+                    <h4>关于企业</h4>
+                    <p>当我们第一次建立沟通时，我们的服务就已经开始，对smartIO来说，客户永远是被放在第一位的，我们始终站在客户的角度去思考。我们拥有强烈责任感和专业的调试工程师团队，在服务上面，我们承诺做到尽心尽力，认真专注。我们认为，服务是产品的一部分，产品无论再好，没有优秀的服务也无法和用户建立联系，这是一种良性循环</p>
                     <div class="funfact fix">
                         <div class="single-funfact text-center">
                             <h2 class="counter">1500</h2>
                             <p>合作企业</p>
                         </div>
                         <div class="single-funfact text-center">
-                            <h2 class="counter">20</h2>
-                            <p>Bedrooms</p>
+                            <h2 class="counter">0.6%</h2>
+                            <p>返修率</p>
                         </div>
                         <div class="single-funfact text-center">
-                            <h2 class="counter">05</h2>
-                            <p>Bathrooms</p>
+                            <h2 class="counter">2000+</h2>
+                            <p>服务</p>
                         </div>
                         <div class="single-funfact text-center">
-                            <h2 class="counter">06</h2>
-                            <p>Car Parking</p>
+                            <h2 class="counter">0.02%</h2>
+                            <p>损坏率</p>
                         </div>
                     </div>
                 </div>

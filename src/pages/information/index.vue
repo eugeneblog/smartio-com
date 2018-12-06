@@ -36,7 +36,6 @@ export default {
 
 <style lang="scss" scoped>
 .information_box {
-    padding-top: 73px;
     width: 100%;
     height: 100%;
 }

@@ -6,24 +6,23 @@
                     <img src="../../assets/agent/1.png" alt="aa">
                 </el-col>
                 <el-col :span="12" class="agent-content">
-                    <h2>CONTACT <span>OUR AGENT</span></h2>
-                    <h3>Hamidur Khan</h3>
-                    <h5>Agent.Sopno</h5>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+                    <h2>联系我们 <span>客服</span></h2>
+                    <h3>09:00 - 18:00</h3>
+                    <h5>工作日</h5>
+                    <p>联系我们的客服人员，我们将耐心的跟您解答关于产品以及价格的问题</p>
                     <ul class="agent-contact-info">
-                        <li><span>Phone :</span> +999 999 999</li>
-                        <li><span>email :</span> +999 999 999</li>
-                        <li><span>Web :</span> +999 999 999</li>
-                        <li><span>skype :</span> +999 999 999</li>
+                        <li><span>座机 :</span> +0799 - 845631300</li>
+                        <li><span>email :</span>2642592347@QQ.COM </li>
+                        <li><span>qq :</span> 2642592347 </li>
+                        <li><span>微信 :</span> 13316967007</li>
                     </ul>
                     <div class="agent-contact-form">
-                        <el-form action="#">
+                        <el-form action="#" v-model="form">
                             <div class="input-box-2">
-                                <div class="input-box"><el-input placeholder="Full Name"></el-input></div>
-                                <div class="input-box"><el-input placeholder="Full Name"></el-input></div>
+                                <div class="input-box"><el-input  v-model="form.name" placeholder="请输入您的姓名"></el-input></div>
                             </div>
-                            <div class="input-box"><el-input type="textarea" placeholder="Message"></el-input></div>
-                            <div class="input-box"><el-input type="submit" value="Submit"></el-input></div>
+                            <div class="input-box"><el-input v-model="form.say" type="textarea" placeholder="在这里输入您想说的"></el-input></div>
+                            <div class="input-box "><el-input @click.native="submitHandle" type="button" value="提交"></el-input></div>
                         </el-form>
                     </div>
                 </el-col>
@@ -33,8 +32,28 @@
 </template>
 
 <script>
+import { sendFeedbackForm } from '@/api/feedback.js'
 export default {
-  name: 'Cases'
+  name: 'Cases',
+  data () {
+    return {
+      formDescribe: {
+        phone: '',
+        email: '',
+        qq: '',
+        wechat: ''
+      },
+      form: {
+        name: '',
+        say: ''
+      }
+    }
+  },
+  methods: {
+    submitHandle () {
+      sendFeedbackForm(this.form)
+    }
+  }
 }
 </script>
 
@@ -63,16 +82,16 @@ export default {
             }
         }
         h2 {
-            font-size: 30px;
+            font-size: 24px;
             text-transform: uppercase;
-            font-weight: 800;
+            font-weight: 400;
             line-height: 22px;
-            margin-bottom: 60px;
+            margin-bottom: 40px;
         }
         h3 {
             font-size: 22px;
             font-family: "Open Sans" , sans-serif;
-            font-weight: 700;
+            font-weight: 300;
             text-transform: uppercase;
             margin-bottom: 7px;
         }
@@ -84,7 +103,7 @@ export default {
             margin-bottom: 16px;
         }
         p {
-            font-weight: 500;
+            font-weight: 300;
             margin-bottom: 22px;
         }
     }

@@ -8,22 +8,22 @@
                     <el-col :span="14">
                         <el-col :span="12" class="single-feature">
                             <img src="../../assets/cases/1.png" alt="">
-                            <h4>Awesome Amenities</h4>
-                            <p>Anything embarrassing hide in the middle of text. All the Lorem Ipsum generators on the</p>
+                            <h4>温湿度控制</h4>
+                            <p>合理调节温度、湿度、空气质量，在满足舒适度的前提下降低能耗是楼宇自控系统的主要任务之一。</p>
                         </el-col>
                         <el-col :span="12" class="single-feature">
                             <img src="../../assets/cases/2.png" alt="">
-                            <h4>Awesome Amenities</h4>
-                            <p>Anything embarrassing hide in the middle of text. All the Lorem Ipsum generators on the</p>
+                            <h4>照明控制</h4>
+                            <p>附属地下停车场照明、通风、污水管理，商场内照明管理和商场景观照明管理也是减少能耗、降低设备管理人员劳动力成本的重要因素。</p>
                         </el-col>
                         <el-col :span="12" class="single-feature">
                             <img src="../../assets/cases/3.png" alt="">
-                            <h4>Awesome Amenities</h4>
+                            <h4>节能环保</h4>
                             <p>Anything embarrassing hide in the middle of text. All the Lorem Ipsum generators on the</p>
                         </el-col>
                         <el-col :span="12" class="single-feature">
                             <img src="../../assets/cases/4.png" alt="">
-                            <h4>Awesome Amenities</h4>
+                            <h4>节省人力</h4>
                             <p>Anything embarrassing hide in the middle of text. All the Lorem Ipsum generators on the</p>
                         </el-col>
                     </el-col>
@@ -44,7 +44,6 @@ export default {
     // float: left;
     width: 100%;
     height: 100%;
-    padding-top: 73px
 }
 .feature-area {
     background-image: url('../../assets/cases/bg.jpg');

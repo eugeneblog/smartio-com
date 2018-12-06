@@ -73,7 +73,7 @@ ul {
    fill: currentColor;
    overflow: hidden;
 }
-.active a{
+.active > a{
     background: #71b100;
     background: -moz-linear-gradient(left, #71b100 0%, #0071b0 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, #71b100), color-stop(100%, #0071b0));

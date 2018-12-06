@@ -34,6 +34,16 @@ export default new Router({
         path: 'information',
         component: () => import('@/pages/information/index.vue')
       }, {
+        path: 'softwareTool',
+        beforeEnter (to, from, next) {
+          window.location.href = 'http://www.smartio.cc/software/program'
+        }
+      }, {
+        path: 'download',
+        beforeEnter (to, from, next) {
+          window.location.href = 'http://www.smartio.cc/EngineerTools'
+        }
+      }, {
         path: 'detail/:id',
         name: 'detail',
         component: () => import('@/pages/detail/index.vue'),

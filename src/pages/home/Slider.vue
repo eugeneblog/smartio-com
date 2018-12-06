@@ -182,17 +182,17 @@ export default {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .hero-area {
-        padding-top: 135px;
+        // padding-top: 135px;
     }
 }
 @media only screen and (max-width: 767px) {
     .hero-area {
-        padding-top: 115px;
+        // padding-top: 115px;
     }
 }
 @media only screen and (max-width: 767px) {
     .hero-area {
-        padding-top: 70px;
+        // padding-top: 70px;
     }
 }
 </style>

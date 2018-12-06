@@ -41,9 +41,20 @@ export default {
           show: false
         }, {
           id: '4',
-          text: 'H5编程工具',
+          text: '软件中心',
           link: '/index/tools',
-          show: false
+          show: false,
+          children: [{
+            id: '1',
+            text: 'program',
+            link: '/index/softwareTool',
+            show: false
+          }, {
+            id: '2',
+            text: '下载中心',
+            link: '/index/download',
+            show: false
+          }]
         }, {
           id: '5',
           text: '行业资讯',
@@ -103,6 +114,10 @@ export default {
         .logo {
             height: auto;
             padding: 0;
+            ul {
+                margin: 0px;
+                padding: 0px;
+            }
             img {
                 width: 100%;
             }

@@ -2,8 +2,8 @@
     <div class="header-top">
       <el-container>
         <el-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12" class="header-info text-left">
-            <p><span>Phone:</span> +945 588 9966</p>
-            <p><span>Email:</span> sopnovilla@email.com</p>
+            <p><span>Phone:</span> +0755-84563100</p>
+            <p><span>Email:</span> 13316967007@126.com</p>
         </el-col>
         <el-col :xs="0" :sm="12" :md="12" :lg="12" :xl="12">
           <div class="header-social text-right">
