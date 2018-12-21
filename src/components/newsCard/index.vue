@@ -3,30 +3,26 @@
         <div class="card_wrap"
         @click="handleClick(newsData.id)"
         >
-            <el-row :gutter="24">
-                <el-col :span="24">
-                    <el-card shadow="hover" class="card_items">
-                        <!-- <div class="card_headerImg">
-                            <img src="../../../assets/card/Bitmap@3x.png" alt="">
-                        </div> -->
-                        <div class="card_header">
-                            <h2>{{ newsData.title }}</h2>
+            <el-card shadow="hover" class="card_items">
+                <!-- <div class="card_headerImg">
+                    <img src="../../../assets/card/Bitmap@3x.png" alt="">
+                </div> -->
+                <div class="card_header">
+                    <h2>{{ newsData.title }}</h2>
+                </div>
+                <div class="card_content">
+                    <div class="card_text">
+                        <p>{{ newsData.describe }}</p>
+                    </div>
+                    <div class="card_footer">
+                        <div class="card_section">
+                            <span>{{ newsData.time }}</span>
+                            <span>{{ newsData.type }} </span>
                         </div>
-                        <div class="card_content">
-                            <div class="card_text">
-                                <p>{{ newsData.context }}</p>
-                            </div>
-                            <div class="card_footer">
-                                <div class="card_section">
-                                    <span>{{ newsData.time }}</span>
-                                    <span>{{ newsData.type }} </span>
-                                </div>
-                                <router-link to="#">查看更多</router-link>
-                            </div>
-                        </div>
-                    </el-card>
-                </el-col>
-            </el-row>
+                        <router-link to="#">查看更多</router-link>
+                    </div>
+                </div>
+            </el-card>
         </div>
     </router-link>
 </template>

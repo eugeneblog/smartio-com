@@ -3,7 +3,7 @@
         <div class="feature-area">
             <el-container>
                 <div class="feature-wrapper">
-                    <h2>蛇口网谷-数码大厦BA系统</h2>
+                    <h2>深圳机场</h2>
                     <p>Anything embarrassing hide in the middle of text. All the Lorem Ipsum generators on</p>
                     <el-col :span="14">
                         <el-col :span="12" class="single-feature">
@@ -19,12 +19,12 @@
                         <el-col :span="12" class="single-feature">
                             <img src="../../assets/cases/3.png" alt="">
                             <h4>节能环保</h4>
-                            <p>Anything embarrassing hide in the middle of text. All the Lorem Ipsum generators on the</p>
+                            <p>我们需要建设可持续的能源系统，尽可能的做到最大的节能</p>
                         </el-col>
                         <el-col :span="12" class="single-feature">
                             <img src="../../assets/cases/4.png" alt="">
                             <h4>节省人力</h4>
-                            <p>Anything embarrassing hide in the middle of text. All the Lorem Ipsum generators on the</p>
+                            <p>百分之八十以上的设备都实现了自动化管理</p>
                         </el-col>
                     </el-col>
                 </div>

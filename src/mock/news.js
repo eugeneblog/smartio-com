@@ -8,12 +8,8 @@ const data = [{
   
   1987年l月ASHRAE(美国供热、制冷及空调工程师协会)组织了世界各地的20余名楼宇自动控制工业部门、包括大学、控制器制造商、政府机构与咨询公司的志愿者组成了一个名为"SPCl35P"的工作组。工作组的目标是制定一个关于楼宇能量管理与控制系统(EMCS)的通讯协议。在长达8年多制定过程中，共收到12个国家741份的意见，经过3次公开评审，最后于1995年6月BACnet协议获得通过，成为ASHRAEl35-1995标准。井于同年12月升为美国国家标准。
 
-
-
   自从BACnet协议作为美国国家标准发表以来，不但在美国本土引起巨大的反响，同时也引起了世界各国智能建筑业界的广泛注意。在发达国家，已纷纷成立了一些重的组织，其中最重要的如在北美成立了BIG-NA(BACnet’s Interest Group-North America)，在欧洲成立了BIG-Eu(BIG-Europe)，在澳大利亚和亚洲成立了BIG-AA(BIG-AustraliaAsia，这些组织在本地区共同推进BACnet协议的实施。
 
-   
-  
   SmartIO - B BACnet路由器相当于以太网路由器，它完成了MS/TP广播数据、请求数据(BACnet UDP包)在MS/TP和以太网之间相互转换，路由器本身不参与数据读写与变换，仅仅将BACnet数据包总线与以太网之间互相转发。
   
   SmartIO - B配套BACnet Schedule，能识别Honeywell SymmetrE、EBI对时指令，不用担心SmartIO - B系统时间与电脑时间误差。
@@ -22,6 +18,7 @@ const data = [{
   
   使用非常简单，仅仅接入电源，设置IP地址和MSTP通讯速率。`,
   time: '2018-3-4 08:43',
+  describe: 'SmartIO - B配套BACnet Schedule，能识别Honeywell SymmetrE、EBI对时指令，不用担心SmartIO - B系统时间与电脑时间误差。',
   type: '行业新闻'
 }, {
   id: '2',
@@ -86,10 +83,9 @@ const data = [{
   
   1.5.2 DDC控制软件设计 34
   
-  1.6 系统特点 35
-  
-  1.7 系统配置清单 36`,
+  1.6 系统特点 35 1.7 系统配置清单 36`,
   time: '2018-3-4 08:43',
+  describe: 'SmartIO - B配套BACnet Schedule，能识别Honeywell SymmetrE、EBI对时指令，不用担心SmartIO - B系统时间与电脑时间误差。',
   type: '行业新闻'
 }, {
   id: '3',
@@ -124,6 +120,7 @@ const data = [{
   
   4，关闭IPV6`,
   time: '2018-3-4 08:43',
+  describe: 'SmartIO - B配套BACnet Schedule，能识别Honeywell SymmetrE、EBI对时指令，不用担心SmartIO - B系统时间与电脑时间误差。',
   type: '行业新闻'
 }, {
   id: '4',
@@ -140,6 +137,7 @@ SmartIO(I830、I831、I823) 现场控 制器，是完 全符合 BACnet 标准的
 3个模拟信号输出点，模拟信号输出规格：电压0～10V，最大11V，±1mA，分辨率8比特。
 3个数字信号输出点。数字信号输出规格：交流24V输出。
 485总线的通讯距离最大1000米。`,
+  describe: 'SmartIO - B配套BACnet Schedule，能识别Honeywell SymmetrE、EBI对时指令，不用担心SmartIO - B系统时间与电脑时间误差。',
   time: '2018-3-4 08:43',
   type: '行业新闻'
 }]

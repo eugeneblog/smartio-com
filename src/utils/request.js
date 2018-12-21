@@ -1,8 +1,9 @@
 import axios from 'axios'
 
 const service = axios.create({
-  baseURL: process.env.BASE_API,
-  timeout: 5000
+  baseURL: process.env.NODE_ENV === 'development' ? process.env.BASE_API : process.env.BASE_API,
+  timeout: 5000,
+  withCredentials: false // 跨域请求是否使用凭证
 })
 
 service.interceptors.request.use(config => {

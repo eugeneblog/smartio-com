@@ -1,10 +1,31 @@
 <template>
     <div class="information_box">
-        <card
-        v-for="item in pageData"
-        @select="handleSelect"
-        :key="item.id"
-        :newsData = 'item'></card>
+      <el-row
+      :gutter="20"
+      >
+        <el-col :span="16">
+          <div
+          class="grid-content bg-purple"
+          v-for="item in pageData"
+          :key="item.id"
+          >
+            <card
+            @select="handleSelect"
+            :newsData = 'item'>
+            </card>
+          </div>
+        </el-col>
+        <el-col :span="8">
+          <div>
+            <div class="hot_article">
+              <h3>热门文章</h3>
+              <span></span>
+              <div>
+              </div>
+            </div>
+          </div>
+        </el-col>
+      </el-row>
     </div>
 </template>
 

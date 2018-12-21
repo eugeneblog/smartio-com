@@ -9,30 +9,30 @@
         </el-row>
         <el-row class="customer-content">
             <el-col :span="6">
-                <img src="../../assets/home/client8.png" alt="">
+                <img src="../../assets/partner/1.jpg" alt="">
             </el-col>
             <el-col :span="6">
-                <img src="../../assets/home/client8.png" alt="">
+                <img src="../../assets/partner/2.jpg" alt="">
             </el-col>
             <el-col :span="6">
-                <img src="../../assets/home/client8.png" alt="">
+                <img src="../../assets/partner/3.jpg" alt="">
             </el-col>
             <el-col :span="6">
-                <img src="../../assets/home/client8.png" alt="">
+                <img src="../../assets/partner/4.jpg" alt="">
             </el-col>
         </el-row>
         <el-row class="customer-content">
             <el-col :span="6">
-                <img src="../../assets/home/client8.png" alt="">
+                <img src="../../assets/partner/5.jpg" alt="">
             </el-col>
             <el-col :span="6">
-                <img src="../../assets/home/client8.png" alt="">
+                <img src="../../assets/partner/6.jpg" alt="">
             </el-col>
             <el-col :span="6">
-                <img src="../../assets/home/client8.png" alt="">
+                <img src="../../assets/partner/7.jpg" alt="">
             </el-col>
             <el-col :span="6">
-                <img src="../../assets/home/client8.png" alt="">
+                <img src="../../assets/partner/8.jpg" alt="">
             </el-col>
         </el-row>
     </div>
@@ -49,6 +49,9 @@ export default {
     background: #ffffff;
     .customer-content {
         margin-top: 35px;
+        img {
+            height: 58px;
+        }
     }
     h2 {
         text-align: center;

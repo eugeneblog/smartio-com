@@ -5,7 +5,7 @@
                 <template v-for="item in slideItems">
                     <div class="swiper-slide" :key="item.id">
                         <div class="slide-items">
-                            <img src="../../assets/swiper/1.jpg">
+                            <img :src="item.imgLink">
                             <div class="swipen-context">
                                 <el-container>
                                     <el-col :span="24" class="hero-content">
@@ -34,7 +34,7 @@ export default {
     return {
       slideItems: [{
         id: '1',
-        imgLink: '../../assets/swiper/1.jpg',
+        imgLink: 'static/swiper/1.jpg',
         context: {
           title: 'Welcome To',
           content: '思麦尔携互联创新技术亮相进博会',
@@ -42,18 +42,18 @@ export default {
         }
       }, {
         id: '2',
-        imgLink: '../../assets/swiper/2.jpg',
+        imgLink: 'static/swiper/2.jpg',
         context: {
           title: 'Welcome To',
-          content: '思麦尔携互联创新技术亮相进博会',
+          content: 'SmartIO思麦尔楼宇自控亮相“高交会”',
           button: '查看详情'
         }
       }, {
         id: '3',
-        imgLink: '../../assets/swiper/3.jpg',
+        imgLink: 'static/swiper/3.jpg',
         context: {
           title: 'Welcome To',
-          content: '思麦尔携互联创新技术亮相进博会',
+          content: 'SmartIO思麦尔CEO出席《深圳市绿色建筑适用技术与产品推广目录》发布仪式',
           button: '查看详情'
         }
       }]
@@ -175,24 +175,6 @@ export default {
                 }
             }
         }
-    }
-}
-.swiper-slide {
-    // height: 400px;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .hero-area {
-        // padding-top: 135px;
-    }
-}
-@media only screen and (max-width: 767px) {
-    .hero-area {
-        // padding-top: 115px;
-    }
-}
-@media only screen and (max-width: 767px) {
-    .hero-area {
-        // padding-top: 70px;
     }
 }
 </style>
