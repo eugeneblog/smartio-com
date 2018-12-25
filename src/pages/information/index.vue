@@ -18,10 +18,7 @@
         <el-col :span="8">
           <div>
             <div class="hot_article">
-              <h3>热门文章</h3>
-              <span></span>
-              <div>
-              </div>
+              <recommend-card></recommend-card>
             </div>
           </div>
         </el-col>
@@ -31,6 +28,7 @@
 
 <script>
 import Card from '@/components/newsCard'
+import RecommendCard from '@/components/recommendCard'
 export default {
   name: 'Infomation',
   data () {
@@ -39,7 +37,8 @@ export default {
     }
   },
   components: {
-    Card
+    Card,
+    RecommendCard
   },
   methods: {
     handleSelect (data) {

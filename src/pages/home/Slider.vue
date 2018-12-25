@@ -11,7 +11,7 @@
                                     <el-col :span="24" class="hero-content">
                                         <h2>{{ item.context.title }}</h2>
                                         <h1>{{ item.context.content }}</h1>
-                                        <a href="#">{{ item.context.button }}</a>
+                                        <router-link :to="item.articleLink">{{ item.context.button }}</router-link>
                                     </el-col>
                                 </el-container>
                             </div>
@@ -35,25 +35,28 @@ export default {
       slideItems: [{
         id: '1',
         imgLink: 'static/swiper/1.jpg',
+        articleLink: '/index/detail/1',
         context: {
           title: 'Welcome To',
-          content: '思麦尔携互联创新技术亮相进博会',
+          content: '践行“中国制造2025”助推楼宇智造',
           button: '查看详情'
         }
       }, {
         id: '2',
         imgLink: 'static/swiper/2.jpg',
+        articleLink: '/index/detail/2',
         context: {
           title: 'Welcome To',
-          content: 'SmartIO思麦尔楼宇自控亮相“高交会”',
+          content: 'SmartIO思麦尔CEO出席《深圳市绿色建筑适用技术与产品推广目录》发布仪式',
           button: '查看详情'
         }
       }, {
         id: '3',
         imgLink: 'static/swiper/3.jpg',
+        articleLink: '/index/detail/3',
         context: {
           title: 'Welcome To',
-          content: 'SmartIO思麦尔CEO出席《深圳市绿色建筑适用技术与产品推广目录》发布仪式',
+          content: '科技监管室内空气污染，保障公众呼吸安全',
           button: '查看详情'
         }
       }]
@@ -68,7 +71,8 @@ export default {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
-      }
+      },
+      autoplay: true
     })
   }
 }

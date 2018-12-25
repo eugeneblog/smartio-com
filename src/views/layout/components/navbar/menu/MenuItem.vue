@@ -4,9 +4,9 @@
             <ul>
                 <li
                 @click = "clickHandle(item, item.id)"
-                @mouseover = "item.children ? childrenShow = true : childrenShow = false"
-                @mouseleave = "item.children ? childrenShow = false : childrenShow = false"
-                :class="{ active: item.show }"
+                @mouseover = "item.children ? item.show = true : item.show = false"
+                @mouseleave = "item.children ? item.show = false : item.show = false"
+                :class="{ active: item.active }"
                 v-for="item in list"
                 :key="item.id"
                 >
@@ -14,7 +14,7 @@
                     <transition name="fade">
                         <div
                         v-if="item.children"
-                        v-show="childrenShow"
+                        v-show="item.show"
                         class="menu_children">
                             <ul>
                                 <li
@@ -35,7 +35,6 @@ export default {
   name: 'MenuItem',
   data () {
     return {
-      childrenShow: false,
       clickIndex: 0
     }
   },
@@ -45,9 +44,10 @@ export default {
   methods: {
     clickHandle (item, index) {
       this.list.forEach(element => {
-        element.show = false
+        element.active = false
       })
       this.clickIndex = index - 1
+      item.active = true
       item.show = true
     }
   }

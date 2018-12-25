@@ -28,21 +28,31 @@ export default {
           id: '1',
           text: '网站首页',
           link: '/index/home',
+          active: false,
           show: false
         }, {
           id: '2',
           text: '成功案例',
           link: '/index/cases',
+          active: false,
           show: false
         }, {
           id: '3',
           text: '产品中心',
           link: '/index/product',
-          show: false
+          active: false,
+          show: false,
+          children: [{
+            id: '1',
+            text: '说明书下载',
+            link: '/index/instructions',
+            show: false
+          }]
         }, {
           id: '4',
           text: '软件中心',
           link: '/index/tools',
+          active: false,
           show: false,
           children: [{
             id: '1',
@@ -59,11 +69,13 @@ export default {
           id: '5',
           text: '行业资讯',
           link: '/index/information',
+          active: false,
           show: false
         }, {
           id: '6',
           text: '联系我们',
           link: '/index/about',
+          active: false,
           show: false
         }
       ],

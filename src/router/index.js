@@ -44,10 +44,12 @@ export default new Router({
           window.location.href = 'http://www.smartio.cc/EngineerTools'
         }
       }, {
+        path: 'instructions',
+        component: () => import('@/pages/instructions/index.vue')
+      }, {
         path: 'detail/:id',
         name: 'detail',
-        component: () => import('@/pages/detail/index.vue'),
-        meta: { keepAlive: true }
+        component: () => import('@/pages/detail/index.vue')
       }]
     }
   ]

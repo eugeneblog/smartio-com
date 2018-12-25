@@ -11,11 +11,8 @@
         </el-row>
         <el-row>
             <el-col :span="24">
-                <section class="textblock">
-                    <p>
-                        {{ pageData.context }}
-                    </p>
-                </section>
+                <p class="textblock" v-html="pageData.context">
+                </p>
             </el-col>
         </el-row>
     </div>
