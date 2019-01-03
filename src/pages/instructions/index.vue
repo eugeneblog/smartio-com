@@ -13,10 +13,10 @@
                 <el-card :body-style="{ padding: '0px' }" class="card_items">
                     <img src="static/resource/pdfLogo.jpg" class="image"/>
                     <div style="padding: 14px;">
-                        <a :href="'http://localhost:8082/static/resource/pdffiles/' + list.text"><span>{{ list.text }}</span></a>
+                        <a class="link-hover" :href="'http://localhost:8082/static/resource/pdffiles/' + list.text"><span>{{ list.text }}</span></a>
                         <div class="bottom clearfix">
-                            <time class="time">{{ list.date }}</time>
-                            <el-button type="text" class="button" @click="downloadHandle(list.text)">点击下载</el-button>
+                          <time class="time">{{ list.date }}</time>
+                          <el-button type="text" class="button" @click="downloadHandle(list.text)">点击查看</el-button>
                         </div>
                     </div>
                 </el-card>
@@ -26,7 +26,6 @@
 </template>
 
 <script>
-import axios from 'axios'
 export default {
   name: 'Instructions',
   data () {
@@ -87,17 +86,7 @@ export default {
   },
   methods: {
     downloadHandle (id) {
-      axios.post('http://localhost:8082/static/resource/pdffiles/' + id, {
-        responseType: 'blob'
-      }).then(response => {
-        const url = window.URL.createObjectURL(new Blob([response.data]))
-        const link = document.createElement('a')
-        let fname = id
-        link.href = url
-        link.setAttribute('download', fname)
-        document.body.appendChild(link)
-        link.click()
-      })
+      window.location.href = process.env.NODE_ENV === 'production' ? 'http://www.smartio.cc/static/resource/pdffiles/' + id : 'http://localhost:8082/static/resource/pdffiles/' + id
     }
   },
   computed: {
@@ -135,5 +124,8 @@ export default {
   }
   .card_items {
       margin-right: 40px;
+      a:hover {
+        text-decoration: underline;
+      }
   }
 </style>

@@ -47,6 +47,16 @@ export default {
             text: '说明书下载',
             link: '/index/instructions',
             show: false
+          }, {
+            id: '2',
+            text: '资料下载',
+            link: '/index/trainbooks',
+            show: false
+          }, {
+            id: '3',
+            text: '产品列表',
+            link: '/index/productlist',
+            show: false
           }]
         }, {
           id: '4',

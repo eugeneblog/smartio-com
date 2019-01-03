@@ -50,6 +50,12 @@ export default new Router({
         path: 'detail/:id',
         name: 'detail',
         component: () => import('@/pages/detail/index.vue')
+      }, {
+        path: 'trainbooks',
+        component: () => import('@/pages/trainbooks/index.vue')
+      }, {
+        path: 'productlist',
+        component: () => import('@/pages/productlist/index.vue')
       }]
     }
   ]
