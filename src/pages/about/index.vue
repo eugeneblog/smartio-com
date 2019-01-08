@@ -11,7 +11,7 @@
                     <h5>工作日</h5>
                     <p>联系我们的客服人员，我们将耐心的跟您解答关于产品以及价格的问题</p>
                     <ul class="agent-contact-info">
-                        <li><span>座机 :</span> +0799 - 845631300</li>
+                        <li><span>座机 :</span> +0755 - 84563130</li>
                         <li><span>email :</span>2642592347@QQ.COM </li>
                         <li><span>qq :</span> 2642592347 </li>
                         <li><span>微信 :</span> 13316967007</li>

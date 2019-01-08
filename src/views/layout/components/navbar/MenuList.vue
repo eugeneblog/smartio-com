@@ -131,7 +131,7 @@ export default {
     width: 100%;
     padding: 30px 0;
     background-color: #fff;
-    z-index: 99999;
+    z-index: 10;
     .navbar-header {
         .logo {
             height: auto;
