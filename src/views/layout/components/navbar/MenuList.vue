@@ -26,64 +26,64 @@ export default {
       listMenu: [
         {
           id: '1',
-          text: '网站首页',
+          text: this.$t('navbar.Home'),
           link: '/index/home',
           active: false,
           show: false
         }, {
           id: '2',
-          text: '成功案例',
+          text: this.$t('navbar.successfulCase'),
           link: '/index/cases',
           active: false,
           show: false
         }, {
           id: '3',
-          text: '产品中心',
+          text: this.$t('navbar.Products'),
           link: '/index/product',
           active: false,
           show: false,
           children: [{
             id: '1',
-            text: '说明书下载',
+            text: this.$t('navbar.download.instructions'),
             link: '/index/instructions',
             show: false
           }, {
             id: '2',
-            text: '资料下载',
+            text: this.$t('navbar.download.datum'),
             link: '/index/trainbooks',
             show: false
           }, {
             id: '3',
-            text: '产品列表',
+            text: this.$t('navbar.download.productList'),
             link: '/index/productlist',
             show: false
           }]
         }, {
           id: '4',
-          text: '软件中心',
+          text: this.$t('navbar.Software'),
           link: '/index/tools',
           active: false,
           show: false,
           children: [{
             id: '1',
-            text: 'program',
+            text: this.$t('navbar.SoftwareProgram'),
             link: '/index/softwareTool',
             show: false
           }, {
             id: '2',
-            text: '下载中心',
+            text: this.$t('navbar.SoftwareDownload'),
             link: '/index/download',
             show: false
           }]
         }, {
           id: '5',
-          text: '行业资讯',
+          text: this.$t('navbar.IndustryNews'),
           link: '/index/information',
           active: false,
           show: false
         }, {
           id: '6',
-          text: '联系我们',
+          text: this.$t('navbar.About'),
           link: '/index/about',
           active: false,
           show: false

@@ -19,13 +19,13 @@
             <a href="javascript:void();" slot="reference"><svg-icon icon-class="gongzhonghao" /></a>
           </el-popover>
             <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2642592347&site=qq&menu=yes"><svg-icon icon-class="qq" /></a>
-            <el-dropdown style="padding-left: 10px;">
+            <el-dropdown style="padding-left: 10px;" @command="handleCommand">
               <span class="el-dropdown-link">
                 语言选择<i class="el-icon-arrow-down el-icon--right"></i>
               </span>
               <el-dropdown-menu slot="dropdown">
-                <el-dropdown-item>chinese</el-dropdown-item>
-                <el-dropdown-item>english</el-dropdown-item>
+                <el-dropdown-item command="zh">chinese</el-dropdown-item>
+                <el-dropdown-item command="en">english</el-dropdown-item>
               </el-dropdown-menu>
             </el-dropdown>
           </div>
@@ -40,6 +40,12 @@ export default {
   data () {
     return {
       visible: false
+    }
+  },
+  methods: {
+    handleCommand (lang) {
+      this.$i18n.locale = lang
+      this.$store.dispatch('setLanguage', lang)
     }
   }
 }
