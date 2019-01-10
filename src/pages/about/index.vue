@@ -6,23 +6,23 @@
                     <img src="../../assets/agent/1.png" alt="aa">
                 </el-col>
                 <el-col :span="12" class="agent-content">
-                    <h2>联系我们 <span>客服</span></h2>
+                    <h2>{{ this.$t('contactUs.title') }} <span>{{ this.$t('contactUs.man') }}</span></h2>
                     <h3>09:00 - 18:00</h3>
-                    <h5>工作日</h5>
-                    <p>联系我们的客服人员，我们将耐心的跟您解答关于产品以及价格的问题</p>
+                    <h5>{{ this.$t('contactUs.workingTime') }}</h5>
+                    <p>{{ this.$t('contactUs.text') }}</p>
                     <ul class="agent-contact-info">
-                        <li><span>座机 :</span> +0755 - 84563130</li>
+                        <li><span>{{ this.$t('contactUs.landline') }} :</span> +0755 - 84563130</li>
                         <li><span>email :</span>2642592347@QQ.COM </li>
                         <li><span>qq :</span> 2642592347 </li>
-                        <li><span>微信 :</span> 13316967007</li>
+                        <li><span>{{ this.$t('contactUs.weChat') }} :</span> 13316967007</li>
                     </ul>
                     <div class="agent-contact-form">
                         <el-form action="#" v-model="form">
                             <div class="input-box-2">
-                                <div class="input-box"><el-input  v-model="form.name" placeholder="请输入您的姓名"></el-input></div>
+                                <div class="input-box"><el-input  v-model="form.name" :placeholder="this.$t('contactUs.tip.name')"></el-input></div>
                             </div>
-                            <div class="input-box"><el-input v-model="form.say" type="textarea" placeholder="在这里输入您想说的"></el-input></div>
-                            <div class="input-box "><el-input @click.native="submitHandle" type="button" value="提交"></el-input></div>
+                            <div class="input-box"><el-input v-model="form.say" type="textarea" :placeholder="this.$t('contactUs.tip.content')"></el-input></div>
+                            <div class="input-box "><el-input @click.native="submitHandle" type="button" :value="this.$t('contactUs.submit')"></el-input></div>
                         </el-form>
                     </div>
                 </el-col>

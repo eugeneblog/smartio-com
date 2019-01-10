@@ -47,42 +47,42 @@ export default {
     return {
       footerContext: [{
         id: '1',
-        title: '关于我们',
-        slogan: '以客户需求为导向，以客户价值为目标，以客户满意为标准 坚持变革，倡导创新，持续成长。 快速反应，快速决策，快速行动 企业与员工共同成长， 专注主营业务。'
+        title: this.$t('footer.aboutMeTitle'),
+        slogan: this.$t('footer.aboutMe')
       }, {
         id: '2',
-        title: '解决方案',
+        title: this.$t('footer.Thesolution'),
         context: [{
           id: '1',
-          text: '空调风机解决方案'
+          text: this.$t('footer.solution[0].text')
         }, {
           id: '2',
-          text: '楼宇系统解决方案'
+          text: this.$t('footer.solution[1].text')
         }, {
           id: '3',
-          text: '行业应用解决方案'
+          text: this.$t('footer.solution[2].text')
         }, {
           id: '4',
-          text: '案例精选'
+          text: this.$t('footer.solution[3].text')
         }]
       }, {
         id: '3',
-        title: '联系我们',
+        title: this.$t('footer.ContactUs'),
         context: [{
           id: '1',
-          text: '服务专线:0755-8456310'
+          text: this.$t('footer.contactUsDetail[0].text')
         }, {
           id: '2',
-          text: '企业邮箱: 13316967007@126.com'
+          text: this.$t('footer.contactUsDetail[1].text')
         }, {
           id: '3',
-          text: '深圳市龙岗区横岗街道麟恒中心广场J栋806'
+          text: this.$t('footer.contactUsDetail[2].text')
         }, {
           id: '4',
-          text: '周一至周六,9:00 - 18:00'
+          text: this.$t('footer.contactUsDetail[3].text')
         }, {
           id: '5',
-          text: '粤ICP备16067960号-1'
+          text: this.$t('footer.contactUsDetail[4].text')
         }]
       }]
     }

@@ -12,7 +12,7 @@
             placement="bottom"
             width="160"
             v-model="visible">
-            <p style="text-align: center">扫一扫添加客服微信</p>
+            <p style="text-align: center">{{ this.$t('navbar.wechat') }}</p>
             <div style="text-align: right; margin: 0" class="wechat_img">
               <img src="static/resource/wechat/mmqrcode1546927520316.jpeg" alt="">
             </div>
@@ -21,7 +21,7 @@
             <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2642592347&site=qq&menu=yes"><svg-icon icon-class="qq" /></a>
             <el-dropdown style="padding-left: 10px;" @command="handleCommand">
               <span class="el-dropdown-link">
-                语言选择<i class="el-icon-arrow-down el-icon--right"></i>
+                {{ this.$t('navbar.language') }}<i class="el-icon-arrow-down el-icon--right"></i>
               </span>
               <el-dropdown-menu slot="dropdown">
                 <el-dropdown-item command="zh">chinese</el-dropdown-item>

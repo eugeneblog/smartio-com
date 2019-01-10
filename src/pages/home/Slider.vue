@@ -38,8 +38,8 @@ export default {
         articleLink: '/index/detail/1',
         context: {
           title: 'Welcome To',
-          content: '践行“中国制造2025”助推楼宇智造',
-          button: '查看详情'
+          content: this.$t('main.slider[0].text'),
+          button: this.$t('main.Checkthedetails')
         }
       }, {
         id: '2',
@@ -47,8 +47,8 @@ export default {
         articleLink: '/index/detail/2',
         context: {
           title: 'Welcome To',
-          content: 'SmartIO思麦尔CEO出席《深圳市绿色建筑适用技术与产品推广目录》发布仪式',
-          button: '查看详情'
+          content: this.$t('main.slider[1].text'),
+          button: this.$t('main.Checkthedetails')
         }
       }, {
         id: '3',
@@ -56,8 +56,8 @@ export default {
         articleLink: '/index/detail/3',
         context: {
           title: 'Welcome To',
-          content: '科技监管室内空气污染，保障公众呼吸安全',
-          button: '查看详情'
+          content: this.$t('main.slider[2].text'),
+          button: this.$t('main.Checkthedetails')
         }
       }]
     }

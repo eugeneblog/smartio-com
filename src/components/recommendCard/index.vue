@@ -18,15 +18,15 @@ export default {
     return {
       recommendData: [{
         id: '1',
-        title: '关注室内空气污染保障公众呼吸安全',
+        title: this.$t('main.slider[0].text'),
         articleId: '201811122'
       }, {
         id: '2',
-        title: '践行“中国制造2025”助推楼宇智造——smartio思麦尔首次亮相“高交会”定稿 ',
+        title: this.$t('main.slider[1].text'),
         articleId: '201811122'
       }, {
         id: '2',
-        title: '科技监管室内空气污染保障公众呼吸安全 ',
+        title: this.$t('main.slider[2].text'),
         articleId: '201811122'
       }]
     }

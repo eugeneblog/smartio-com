@@ -6,25 +6,25 @@
                     <img src="../../assets/about/1.jpg" alt="">
                 </div>
                 <div class="about-content">
-                    <h1>关于<span>SmartIO</span></h1>
-                    <h4>关于企业</h4>
-                    <p>当我们第一次建立沟通时，我们的服务就已经开始，对smartIO来说，客户永远是被放在第一位的，我们始终站在客户的角度去思考。我们拥有强烈责任感和专业的调试工程师团队，在服务上面，我们承诺做到尽心尽力，认真专注。我们认为，服务是产品的一部分，产品无论再好，没有优秀的服务也无法和用户建立联系，这是一种良性循环</p>
+                    <h1>{{ this.$t('about.introduceCompany.about') }}<span>SmartIO</span></h1>
+                    <h4>{{ this.$t('about.introduceCompany.about') + this.$t('about.introduceCompany.company') }}</h4>
+                    <p>{{ this.$t('about.introduceCompany.context') }}</p>
                     <div class="funfact fix">
                         <div class="single-funfact text-center">
                             <h2 class="counter">1500</h2>
-                            <p>合作企业</p>
+                            <p>{{ this.$t('about.introduceCompany.thecooperativeenterprise') }}</p>
                         </div>
                         <div class="single-funfact text-center">
                             <h2 class="counter">0.6%</h2>
-                            <p>返修率</p>
+                            <p>{{ this.$t('about.introduceCompany.Repairrate') }}</p>
                         </div>
                         <div class="single-funfact text-center">
                             <h2 class="counter">2000+</h2>
-                            <p>服务</p>
+                            <p>{{ this.$t('about.introduceCompany.service') }}</p>
                         </div>
                         <div class="single-funfact text-center">
                             <h2 class="counter">0.02%</h2>
-                            <p>损坏率</p>
+                            <p>{{ this.$t('about.introduceCompany.Damagerate') }}</p>
                         </div>
                     </div>
                 </div>

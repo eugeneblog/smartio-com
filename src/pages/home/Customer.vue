@@ -3,7 +3,7 @@
         <el-row>
             <el-col :span="24" class="customer-title">
                 <h2>
-                    我们的客户
+                    {{ this.$t('about.cooperation') }}
                 </h2>
             </el-col>
         </el-row>
