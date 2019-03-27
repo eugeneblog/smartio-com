@@ -16,7 +16,7 @@ export default {
     phone: '电话',
     email: '邮箱',
     language: '语言',
-    weChat: '扫一扫添加客服微信'
+    wechat: '扫一扫添加客服微信'
   },
   about: {
     introduceCompany: {

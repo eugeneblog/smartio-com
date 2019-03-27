@@ -56,6 +56,12 @@ export default new Router({
       }, {
         path: 'productlist',
         component: () => import('@/pages/productlist/index.vue')
+      }, {
+        path: 'ddc',
+        component: () => import('@/pages/product/ddc')
+      }, {
+        path: 'illumination',
+        component: () => import('@/pages/product/illumination')
       }]
     }
   ]

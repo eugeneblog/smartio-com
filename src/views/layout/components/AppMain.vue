@@ -26,7 +26,7 @@
                                 </p>
                                 <ul class="specific-text">
                                     <li v-for="list in item.context" :key="list.id">
-                                        <a href="#">
+                                        <a :href="list.linkUrl || '#'">
                                             {{ list.text }}
                                         </a>
                                     </li>
@@ -82,7 +82,8 @@ export default {
           text: this.$t('footer.contactUsDetail[3].text')
         }, {
           id: '5',
-          text: this.$t('footer.contactUsDetail[4].text')
+          text: this.$t('footer.contactUsDetail[4].text'),
+          linkUrl: 'http://www.miitbeian.gov.cn'
         }]
       }]
     }

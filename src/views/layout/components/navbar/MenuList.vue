@@ -12,85 +12,25 @@
                     </button>
                     <a href="" class="navbar-brand logo"><img src="../../../../assets/logo.png" alt=""></a>
                 </div>
-                <menu-item v-show="!isShow" :list = "listMenu"></menu-item>
+                <menu-item v-show="!isShow" :list = "getMenuList"></menu-item>
             </el-col>
         </el-container>
     </div>
 </template>
 <script>
 import MenuItem from './menu/MenuItem'
+import { mapGetters } from 'vuex'
 export default {
   name: 'MenuList',
   data () {
     return {
-      listMenu: [
-        {
-          id: '1',
-          text: this.$t('navbar.Home'),
-          link: '/index/home',
-          active: false,
-          show: false
-        }, {
-          id: '2',
-          text: this.$t('navbar.successfulCase'),
-          link: '/index/cases',
-          active: false,
-          show: false
-        }, {
-          id: '3',
-          text: this.$t('navbar.Products'),
-          link: '/index/product',
-          active: false,
-          show: false,
-          children: [{
-            id: '1',
-            text: this.$t('navbar.download.instructions'),
-            link: '/index/instructions',
-            show: false
-          }, {
-            id: '2',
-            text: this.$t('navbar.download.datum'),
-            link: '/index/trainbooks',
-            show: false
-          }, {
-            id: '3',
-            text: this.$t('navbar.download.productList'),
-            link: '/index/productlist',
-            show: false
-          }]
-        }, {
-          id: '4',
-          text: this.$t('navbar.Software'),
-          link: '/index/tools',
-          active: false,
-          show: false,
-          children: [{
-            id: '1',
-            text: this.$t('navbar.SoftwareProgram'),
-            link: '/index/softwareTool',
-            show: false
-          }, {
-            id: '2',
-            text: this.$t('navbar.SoftwareDownload'),
-            link: '/index/download',
-            show: false
-          }]
-        }, {
-          id: '5',
-          text: this.$t('navbar.IndustryNews'),
-          link: '/index/information',
-          active: false,
-          show: false
-        }, {
-          id: '6',
-          text: this.$t('navbar.About'),
-          link: '/index/about',
-          active: false,
-          show: false
-        }
-      ],
       isShow: false
     }
+  },
+  computed: {
+    ...mapGetters([
+      'getMenuList'
+    ])
   },
   components: {
     MenuItem
