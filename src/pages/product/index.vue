@@ -4,11 +4,10 @@
           <el-container>
               <div class="feature-wrapper">
                   <h2>产品中心</h2>
-                  <p>Anything embarrassing hide in the middle of text. All the Lorem Ipsum generators on</p>
-                  <div class="single-feature" v-for="(o, index) of childrens" :key="index">
+                  <p>Our products and related materials</p>
+                  <div class="single-feature" v-for="(o, index) of childrens" :key="index" @click="listClickHandle(o)">
                       <img src="../../assets/cases/1.png" alt="">
                       <h4>{{o.text}}</h4>
-                      <p></p>
                       <router-link :to="o.link">{{o.text}}>>></router-link>
                   </div>
               </div>
@@ -29,6 +28,12 @@ export default {
   beforeMount () {
     this.childrens = this.$store.getters.getTodoById('product').children
     console.log(this.childrens)
+  },
+  methods: {
+    listClickHandle (o) {
+      // console.log(this)
+      this.$router.replace(o.link)
+    }
   }
 }
 </script>
@@ -48,7 +53,7 @@ export default {
     width: 100%;
     position: relative;
     &::before {
-        background-color: #00b0b0;
+        background-color: #089ab0;
         bottom: 0;
         content: "";
         left: 0;
@@ -62,14 +67,22 @@ export default {
         position: relative;
         z-index: 1;
         .single-feature {
-            margin-bottom: 60px;
-            padding-right: 60px;
-            h4 {
-                color: #ffffff;
-            }
-            a {
+          overflow: hidden;
+          padding: 15px;
+          cursor: pointer;
+          margin-bottom: 60px;
+          h4 {
               color: #ffffff;
+          }
+          a {
+            color: #ffffff;
+          }
+          &:hover{
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            a {
+              font-size: 16px;
             }
+          }
         }
         h2 {
             z-index: 1;

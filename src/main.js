@@ -33,3 +33,14 @@ new Vue({
   i18n,
   render: h => h(App)
 })
+
+export function createApp () {
+  const app = new Vue({
+    el: '#app',
+    router,
+    store,
+    i18n,
+    render: h => h(App)
+  })
+  return { app }
+}
