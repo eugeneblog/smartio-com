@@ -6,7 +6,10 @@ const renderer = require('vue-server-renderer').createRenderer()
 
 server.get('*', (req, res) => {
   res.setHeader('Content-Type', 'text/html;charset=utf-8')
-  const app = createApp({url: req.url})
+
+  const context = { url: req.url }
+  const app = createApp(context)
+
   renderer.renderToString(app).then(html => {
     console.log(html)
     res.end(html)

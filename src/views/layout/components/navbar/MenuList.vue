@@ -12,25 +12,22 @@
                     </button>
                     <a href="" class="navbar-brand logo"><img src="../../../../assets/logo.png" alt=""></a>
                 </div>
-                <menu-item v-show="!isShow" :list = "getMenuList"></menu-item>
+                <menu-item v-show="!isShow" :list="menuList"></menu-item>
             </el-col>
         </el-container>
     </div>
 </template>
 <script>
 import MenuItem from './menu/MenuItem'
-import { mapGetters } from 'vuex'
 export default {
   name: 'MenuList',
+  props: {
+    menuList: Array
+  },
   data () {
     return {
       isShow: false
     }
-  },
-  computed: {
-    ...mapGetters([
-      'getMenuList'
-    ])
   },
   components: {
     MenuItem
@@ -55,6 +52,7 @@ export default {
     this.changeMediaScreen(this)
   },
   mounted () {
+    console.log(this)
     const _this = this
     window.onresize = () => {
       _this.changeMediaScreen(_this)

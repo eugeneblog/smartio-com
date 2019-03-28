@@ -1,7 +1,7 @@
 <template>
     <div class="header-box">
         <top-nav></top-nav>
-        <menu-list></menu-list>
+        <menu-list :menu-list="menuList"></menu-list>
     </div>
 </template>
 
@@ -10,6 +10,9 @@ import TopNav from './TopNav'
 import MenuList from './MenuList'
 export default {
   name: 'NavBar',
+  props: {
+    menuList: Array
+  },
   components: {
     TopNav,
     MenuList
